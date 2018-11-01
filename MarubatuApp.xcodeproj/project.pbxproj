@@ -12,6 +12,7 @@
 		32093DE5218425E70000C530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32093DE3218425E70000C530 /* Main.storyboard */; };
 		32093DE7218425E80000C530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32093DE6218425E80000C530 /* Assets.xcassets */; };
 		32093DEA218425E80000C530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32093DE8218425E80000C530 /* LaunchScreen.storyboard */; };
+		3209E3592187FE2600F19B45 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209E3582187FE2600F19B45 /* CreateQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		32093DE6218425E80000C530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32093DE9218425E80000C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32093DEB218425E80000C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3209E3582187FE2600F19B45 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				32093DDF218425E60000C530 /* AppDelegate.swift */,
 				32093DE1218425E60000C530 /* ViewController.swift */,
+				3209E3582187FE2600F19B45 /* CreateQuestionViewController.swift */,
 				32093DE3218425E70000C530 /* Main.storyboard */,
 				32093DE6218425E80000C530 /* Assets.xcassets */,
 				32093DE8218425E80000C530 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32093DE2218425E60000C530 /* ViewController.swift in Sources */,
+				3209E3592187FE2600F19B45 /* CreateQuestionViewController.swift in Sources */,
 				32093DE0218425E60000C530 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
