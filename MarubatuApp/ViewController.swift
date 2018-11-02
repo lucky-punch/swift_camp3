@@ -23,30 +23,22 @@ class ViewController: UIViewController {
     //画面表示されたとき発動
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //もしUserDefaultsに問題が入っていたら
-        if UserDefaults.standard.object(forKey: "questions") != nil {
-            resultQuestions = UserDefaults.standard.object(forKey: "questions") as! [[String : Any]]
-            showQuestion()
-        }
-        //もし問題が入っていなかったら
-        if currentQuestionNum == resultQuestions.count {
-            UserDefaults.standard.object(forKey: "questions")
-            questionLabel.text = "問題文がありません、問題を作りましょう！！！"
-            print(resultQuestions)
-        }
-        
+        showQuestion()
     }
     
     
     
     // 問題を表示する関数
     func showQuestion() {
+        resultQuestions = UserDefaults.standard.object(forKey: "questions") as! [[String : Any]]
         //nil対策で入れたif文
         if currentQuestionNum < resultQuestions.count {
             let resultQuestion = resultQuestions[currentQuestionNum]
-            //print(resultQuestion)
             let que = resultQuestion["question"]
             questionLabel.text = que as? String
+        } else {
+            //もし問題が入っていなかったら
+                questionLabel.text = "問題文がありません、問題を作りましょう！！！"
         }
     }
     
@@ -91,7 +83,7 @@ class ViewController: UIViewController {
         
         alert.addAction(close)
         present(alert,animated: true,completion: nil)
-        }
+    }
     
     
     

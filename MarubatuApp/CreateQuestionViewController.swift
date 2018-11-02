@@ -53,7 +53,6 @@ class CreateQuestionViewController: UIViewController {
         UserDefaults.standard.removeObject(forKey: "questions")
         //保存
         UserDefaults.standard.set(questions, forKey: "questions")
-        print(questions)
         showAlert(message: "問題をすべて削除しました。")
         textField.text = ""
     }
